@@ -154,13 +154,130 @@
 //}
 //Console.WriteLine(number==NewNumber.ToString());
 
-Console.Clear();
-Console.Write("ведите число массива ");
-int n = Convert.ToInt32(Console.ReadLine());
-int[] Array = new int[n];
-for (int i = 0; i < Array.Length;i++)
+//находи максимум из двух чисел
+//int f (int a, int b)
+//{
+  //if (a > b)
+    //  return a;
+  //return b;
+
+//}
+//Console.Write("ведите 1    число ");
+//int c = Convert.ToInt32(Console.ReadLine());
+//Console.Write("ведите 2 число ");
+//int g = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine(f(c,g));
+
+
+// находим суму отрицательных и палажительны элиментов масива.
+//void Fory(int[] array)
+//{
+  //for(int i=0;i>array.Length;i++)
+  //array[i] = new Random().Next(-9,10);
+//}
+
+//void Spiys (int[]array)
+//{
+  //int Inputpasetive=0,Inputnegative=0;
+    //for(int i = 0;i < array.Length;i++)
+    //{
+      
+      //if( array[i]>0 )
+      //Inputpasetive += array[i];
+      //else
+      //Inputnegative += array[i];
+    //}  
+    //Console.WriteLine($"{Inputpasetive}");
+    //Console.WriteLine($"{Inputnegative}");
+
+//}
+//Console.Write("ведите число");
+//int d = Convert.ToInt32(Console.ReadLine());
+//int[] array = new int[d];
+//Fory(array);
+//Console.WriteLine($"[{string.Join(", ", array)}]");
+//Spiys(array);
+
+
+//void Dog(int[] array)
+//{
+  //for(int i=0;i<array.Length;i++)
+  //array[i] = new Random().Next(-9,10);
+//}
+
+ //string fox(int[]array,int number)
+ //{
+  //for(int i=0;i<array.Length;i++)
+ //{
+  //if(number==array[i])
+  //return "yes";
+  //}
+    //return"no";
+ //}int number = Convert.ToInt32(Console.ReadLine());
+
+
+//Console.Clear();
+//Console.Write("ВЕДИТЕ ЧИСЛО ");
+//int v = Convert.ToInt32(Console.ReadLine());
+//int[] array = new int[v];
+//Dog(array);
+//Console.WriteLine($"[{string.Join(", ", array)}]");
+//fox(array,number);
+//Console.Write("ВЕДИТЕ ЧИСЛО ");
+ 
+
+
+//находим количесво элиментов в массиве
+//void island(int[] array)
+//{
+  //for(int i=0;i<array.Length;i++)
+  //array[i] = new Random().Next(10,99);
+//}
+
+
+//void list (int[] array)
+//{
+  //int count = 0;
+  //for(int i=0;i<array.Length;i++)
+  //{
+   //if(array[i] >=10 && array[i] <= 99 )
+   //count++; 
+  //}
+//Console.WriteLine($"количества {count}");
+//}
+
+
+//Console.Clear();
+//Console.Write("ВЕДИТЕ ЧИСЛО ");
+//int v = Convert.ToInt32(Console.ReadLine());
+//int[] array = new int[v];
+//island(array);
+//Console.WriteLine($"[{string.Join(", ", array)}]");
+//list(array);
+
+
+void king(int[] array)
 {
-  Console.Write($"пишите число {i + 1} ");
-  Array[i] = Convert.ToInt32(Console.ReadLine());
+  for(int i=0;i<array.Length;i++)
+  array[i] = new Random().Next(10,99);
 }
-Console.WriteLine($"[{string.Join(", ", Array)}]");
+
+void list (int[] array)
+{
+  int count = 0;
+ 
+  for(int i=0;i<array.Length;i++ )
+{  if(array[i] >= 10 || array[i] <= 99 )
+  count++;
+}
+Console.WriteLine($" кол-во элиментов {count}, в масиве");
+}
+
+
+Console.Clear();
+Console.Write("ведите число ");
+int b = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[b];
+king(array);
+Console.WriteLine($"[{string.Join(", ", array)}]");
+list(array);
