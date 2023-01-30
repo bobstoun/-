@@ -256,28 +256,15 @@
 //list(array);
 
 
-void king(int[] array)
-{
-  for(int i=0;i<array.Length;i++)
-  array[i] = new Random().Next(10,99);
-}
-
-void list (int[] array)
-{
-  int count = 0;
- 
-  for(int i=0;i<array.Length;i++ )
-{  if(array[i] >= 10 || array[i] <= 99 )
-  count++;
-}
-Console.WriteLine($" кол-во элиментов {count}, в масиве");
-}
-
-
 Console.Clear();
-Console.Write("ведите число ");
-int b = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[b];
-king(array);
-Console.WriteLine($"[{string.Join(", ", array)}]");
-list(array);
+Console.Write("ВЕДИТЕ First ЧИССЛО ");
+int n = Convert.ToInt32(Console.ReadLine()),b1=2,k1 = 5,x;
+int[] array = new int[n];
+for(int i=0;i<n;i++)
+{
+  x=b1+k1;
+  b1=k1;
+  b1=x;
+}
+Console.WriteLine($"{string.Join(", ", array)}");
+
